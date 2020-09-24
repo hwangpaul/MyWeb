@@ -10,6 +10,7 @@
 		width: 100%;
 		height: 54px;
 		background-color: #FFFFF0;
+		position: fixed;
 		top: 0px;
 	}
 	
@@ -85,23 +86,81 @@
 		height: 600px;
 	}
 	
-	section img
+	#main_content_2 {
+		width: 100%;
+		height: 149px;
+		background-color: green;
+		margin-top: 48px;
+		
+	} 
+	
+	#main_content_3 {
+		width: 738px;
+		height: 134px;
+		background-color: yellow;
+		margin: 0 auto;
+		border: solid 3pdx black;
+	}
+	
+	#main_content_2 li {
+		float: left;
+		list-style: none;
+		width: 184.5px;
+		height:134px;
+		padding-top: 20px;
+		
+		
+		
+		
+	}
+	
+	.main_text1 {
+		color: black;
+		font-weight: bold;
+		text-decoration: none;
+		text-align: center;	
+	}
+	
+	
+	
+	
 	
 	/* Footer */
 	footer {
 		width: 100%;
 		height: 324px;
-		bottom: 0px;
 		background-color: #DCDCDC;
-		bottom: 0px;
-
+		
 	}
 	
 	#footer_wrap {
-		width: 100%;
+		width: 80%;
 		height: 324px;
 		margin: 0 auto;
 		
+		
+	}
+	
+	.list_foot {
+		list-style: none;
+		line-height: 50px;
+		
+	}
+	
+	.footer_list  {
+		text-decoration: none;
+		color: black;
+		font-weight: bold;
+		font-size: 0.7rem;
+		float: left;
+		padding-left: 60px;
+		padding-right: 60px;
+		
+	}
+	
+	.list_foot a {
+		text-decoration: none;
+		color: black;
 	}
 	
 </style>
@@ -140,10 +199,20 @@
 	<!-- Section -->
 	<section id="main_comtainer">
 		<article id="main_content_1">
-			<img alt="" src="./images/main/section_image1.jpg">
+			<a href="#">
+			<img alt="" src="./images/main/section_image1.jpg">	
+			</a>		
 		</article>
 		<article id="main_content_2">
+		<div id="main_content_3">
+		<ul>
+			<li class="section_2"><a href="#"><img alt="" src="./images/main/section_image2.png"><div class="main_text1">내게맞는<br>Microsoft365<br>선택하기</div></a></li>
+			<li class="section_2"><a href="#"><img alt="" src="./images/main/section_image3.png"><div class="main_text1">Surface 디바이스<br>쇼핑하기</div></a></li>
+			<li class="section_2"><a href="#"><img alt="" src="./images/main/section_image4.png"><div class="main_text1">Xbox 쇼핑</div></a></li>
+			<li class="section_2"><a href="#"><img alt="" src="./images/main/section_image5.png"><div class="main_text1">Windows 10<br>쇼핑하기</div></a></li>
 			
+		</ul>
+		</div>	
 		</article>
 		
 	</section>
@@ -151,21 +220,72 @@
 	<!-- Footer -->
 	<footer>
 		<div id="footer_wrap">
-			<div id="footer_list">
-				<!--  <ul>
-					<li class="list_foot"><a href="#">새로운 기능</a></li>
+			<div class="footer_list">
+				<ul>
+					<li class="list_foot"><h2>새로운 기능</h2></li>
 					<li class="list_foot"><a href="#">Microsoft 365</a></li>
 					<li class="list_foot"><a href="#">Surface Pro 7</a></li>
 					<li class="list_foot"><a href="#">Surface Laptop 3</a></li>
 					<li class="list_foot"><a href="#">Surface Go</a></li>
 					<li class="list_foot"><a href="#">Windows 10 앱(238K)</a></li>
-				</ul>-->
+				</ul>
 			</div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
+			
+			<div class="footer_list">
+			<ul>
+					<li class="list_foot"><h2>Microsoft Store</h2></li>
+					<li class="list_foot"><a href="#">계정 프로필</a></li>
+					<li class="list_foot"><a href="#">다은로드 센터</a></li>
+					<li class="list_foot"><a href="#">Microsoft Store 지원</a></li>
+					<li class="list_foot"><a href="#">반품/환불</a></li>
+					<li class="list_foot"><a href="#">주문 추적</a></li>
+				</ul>
+				
+			</div>
+			
+			<div class="footer_list">
+			<ul>
+					<li class="list_foot"><h2>교육</h2></li>
+					<li class="list_foot"><a href="#">교육 분야의 Microsoft</a></li>
+					<li class="list_foot"><a href="#">학생용 Office</a></li>
+					<li class="list_foot"><a href="#">학교용 Office 365</a></li>
+					<li class="list_foot"><a href="#">학생 및 학부모용 특가 혜택</a></li>
+					<li class="list_foot"><a href="#">교육 분야의 Microsoft Azure</a></li>
+				</ul>				
+			</div>
+			
+			<div class="footer_list">
+			<ul>
+					<li class="list_foot"><h2>대기업</h2></li>
+					<li class="list_foot"><a href="#">Arzue</a></li>
+					<li class="list_foot"><a href="#">AppSource</a></li>
+					<li class="list_foot"><a href="#">자동차 </a></li>
+					<li class="list_foot"><a href="#">정부기관</a></li>
+					<li class="list_foot"><a href="#">의료 서비스</a></li>
+				</ul>
+			</div>
+			
+			<div class="footer_list">
+			<ul>
+					<li class="list_foot"><h2>개발자</h2></li>
+					<li class="list_foot"><a href="#">Microsoft Visual Studio</a></li>
+					<li class="list_foot"><a href="#">Windows 개발자 센터</a></li>
+					<li class="list_foot"><a href="#">개발자 센터</a></li>
+					<li class="list_foot"><a href="#">Microsoft 개발자 프로그램</a></li>
+					<li class="list_foot"><a href="#">채널 9</a></li>
+				</ul>
+			</div>
+			
+			<div class="footer_list">
+			<ul>
+					<li class="list_foot"><h2>회사</h2></li>
+					<li class="list_foot"><a href="#">채용 정보</a></li>
+					<li class="list_foot"><a href="#">Microsoft 정보</a></li>
+					<li class="list_foot"><a href="#">회사 뉴스</a></li>
+					<li class="list_foot"><a href="#">Microsoft 개인 정보 보호</a></li>
+					<li class="list_foot"><a href="#">보안</a></li>
+				</ul>
+			</div>
 		</div>
 	</footer>
 </body>
