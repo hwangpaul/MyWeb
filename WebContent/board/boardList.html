@@ -5,6 +5,121 @@
 <title>Insert title here</title>
 <link href="../css/common/reset.css" rel="stylesheet">
 <style type="text/css">
+
+		/* Header */
+	header {
+		width: 100%;
+		height: 54px;
+		background-color: #FFFFF0;
+		position: fixed;
+		top: 0px;
+	}
+	
+	#header_top {
+		width: 80%;
+		height: 54px;
+		margin: 0 auto;
+		background-color: #FFFFF0;
+		
+	}
+	
+	#header_logo {
+		width: 20%;
+		height: 44px;
+		padding: 5px;
+		box-sizing: border-box;
+		
+			
+	}
+	
+	.header_menu {
+		float: left;
+	}
+	
+	#header_nav a {
+		text-decoration: none;
+		color: gray;
+		font-weight: bold;
+		font-size: 0.8rem;
+		
+	}
+	
+	#header_sub a {
+		text-decoration: none;
+		color: gray;
+		font-weight: bold;
+		font-size: 0.8rem;
+	}
+	
+
+	.list_menu {
+		float: left;
+		list-style: none;
+		width: 100px;
+		height: 47px;
+		line-height: 47px;
+		color: gray;
+		font-weight: bold;
+		
+		
+	}
+	
+	.list_sub {
+		float: right;
+		list-style: none;
+		width: 100px;
+		height: 47px;
+		line-height: 47px;
+		text-align: right;
+		
+	}
+	
+	/* Section */
+	#board_content {
+		width: 60%;
+		min-height: 842px;/*min, max*/
+		margin: 167px auto 80px;
+		
+	}
+	
+	/* Footer */
+	footer {
+		width: 100%;
+		height: 324px;
+		background-color: #DCDCDC;
+		
+	}
+	
+	#footer_wrap {
+		width: 80%;
+		height: 324px;
+		margin: 0 auto;
+		
+		
+	}
+	
+	.list_foot {
+		list-style: none;
+		line-height: 50px;
+		
+	}
+	
+	.footer_list  {
+		text-decoration: none;
+		color: black;
+		font-weight: bold;
+		font-size: 0.7rem;
+		float: left;
+		padding-left: 60px;
+		padding-right: 60px;
+		
+	}
+	
+	.list_foot a {
+		text-decoration: none;
+		color: black;
+	}
+	
 	.title {
 		width: 350px;
 		height: 20px;
@@ -61,7 +176,7 @@
 			</div>
 		<nav id="header_nav" class="header_menu">
 			<ul>
-				<li class="list_menu"><a href="./board/boardList.html">Board</a></li>
+				<li class="list_menu"><a href="../board/boardList.html">Board</a></li>
 				<li class="list_menu"><a href="#">Office</a></li>
 				<li class="list_menu"><a href="#">Windows></a></li>
 				<li class="list_menu"><a href="#">Surface</a></li>
@@ -82,6 +197,7 @@
 	</header>	
 	
 	<!-- Section -->
+	<section id="board_content">
 	<table class="title">
 		<tr>
 		<td><h1>Board List Page</h1><br></td>
@@ -142,9 +258,9 @@
 		</tr>
 	
 	</table>
-	
+	</section>
 	<!-- Footer -->
-<footer>
+	<footer>
 		<div id="footer_wrap">
 			<div class="footer_list">
 				<ul>
